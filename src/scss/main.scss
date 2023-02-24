@@ -24,7 +24,7 @@ h1 {
     font-size: 3vw;
     color: beige;
     position: relative;
-    top: -60px;
+    top: -80px;
     left: 5%;
 }
 
@@ -37,10 +37,11 @@ h1 {
 -------------------- main --------------------------------------------------------
 --------------------------------------------------------------------------------*/
 
+
 .main_container {
     background-color: black;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 h2 {
@@ -88,4 +89,49 @@ li {
     font-size: 4vw;
     display: flex;
     flex-direction: row;
+}
+
+/*-----------------------------------------------------------------------------------------------------
+------------------ Bigger screens ---------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+
+    .header_div_span {
+        top: -18vh;
+    }
+}
+
+@media screen and (min-width: 1400px){
+
+    .header_background_img {
+        max-height: 100vh;
+    }
+
+h2 {
+    font-size: 3vw;
+}
+
+    .header_div_span {
+        top: -200px;
+    }
+
+    .main_container {
+        background-image: url("/src/image/pals.jpg");
+    }
+
+    .section_article_posts {
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: black;
+    }
+
+    .main_article_h3 {
+        font-size: 2vw;
+        color: beige;
+    }
+
+    li {
+        font-size: 3vw;
+    }
 }
